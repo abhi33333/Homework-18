@@ -1,42 +1,22 @@
 
-/** HW 18 Media Queries**/
 
-@media (max-width:600px) {
-    .flexContainer {
-        flex-direction:column;
-        width:100%;
-    }
-    .gridContainer{
-        display:grid;
-        grid-template-rows: 1fr 1fr 1fr 1fr ;
-        grid-template-columns: 1fr;
-       
-        ;
-       
-    }
-
-}
-/** HW 18 My Work section  **/
+/** HW 18 My Work section-Portfolio page  **/
 
 
 .gridContainer{
 
     display:grid;
-    height:100vh;
+    height:130vh;
     padding-left: 2rem;
     padding-right: 2rem;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
     gap: 2rem;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr ;
-
-}
-
-.item{
-    display:flex;
-    flex-direction: column;
-    justify-content:center;
-    align-items:center ;
+    grid-template-areas: 
+    'caseStudy1 caseStudy2'
+     'caseStudy3 caseStudy4'
+    ;
 
 }
 
@@ -65,44 +45,66 @@
   }
 
 .caseStudy1{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center ;
     background: #FF8C0090;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 8px;
 /** RowStart/ColStart/RowEnd/ColEnd **/
-grid-area: 1/1/1/2;
+/**grid-area: 1/1/1/2; **/
 padding-bottom: 10px;
+grid-area: caseStudy1;
+
 }
 
 .caseStudy2{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center ;
 background: #FF260090;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 border-radius: 8px;
-grid-area: 1/2/1/2;
+/**grid-area: 1/2/1/2;**/
 padding-bottom: 10px;
+grid-area: caseStudy2;
 }
 
 .caseStudy3{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center ;
 background: #FF260090;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 border-radius: 8px;  
 grid-area: 2/1/2/2;
 padding-bottom: 10px;
+grid-area: caseStudy3;
  }
 
 .caseStudy4{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center ;
 background: #FF8C0090;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 border-radius: 8px;
 grid-area: 2/2/2/2;
 padding-bottom: 10px;
+grid-area: caseStudy4;
 }
 
 
-/** HW 18  My Skill section  **/
+/** HW 18  My Skill section-About Me page  **/
 
 
 .flexContainer{
     display:flex;
+    flex-direction: row;
     justify-content:center;
     align-items: center;
     height:auto;
@@ -267,7 +269,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     max-width: 1200px;
-    max-height:max-content;
+    height:auto;
     font-family: 'Plus Jakarta Sans', sans-serif;
     color: #422828;
     box-shadow: 0px 0px 10px #CECECE;
@@ -301,11 +303,51 @@ img {
     padding: 10px;
     overflow-clip-margin: content-box;
     overflow: clip;
-    
+}
 
 
 p{
     margin: 80px;
     font-size: small;
 }
+/** HW 18 Media Queries**/
 
+
+@media (max-width:600px) {
+
+  
+    .flexContainer {
+        flex-direction:column;
+        width:100%;
+        align-items: center;
+        
+      
+        
+    }
+    .userResearch, .userInterfaceDesign, .webDevelopment{
+        max-width: 80%;
+        
+    }
+   
+    .gridContainer{
+        display:grid;
+        height:auto;
+        padding-left: 7rem;
+        padding-right: 3rem;
+       
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr ;
+       grid-template-areas: 
+       'caseStudy1'
+       'caseStudy2'
+       'caseStudy3'
+       'caseStudy4';
+       
+    
+    
+    }
+    .caseStudy1, .caseStudy2, .caseStudy3, .caseStudy4{
+        max-width: 80%;
+    }
+
+}
