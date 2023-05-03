@@ -23,12 +23,13 @@
 
 
 .gridContainer{
-   
+
     display:grid;
     height:100vh;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    gap: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+    gap: 2rem;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr ;
 
@@ -72,29 +73,31 @@
     border-radius: 8px;
 /** RowStart/ColStart/RowEnd/ColEnd **/
 grid-area: 1/1/1/2;
+padding-bottom: 10px;
 }
-
-
-
-
 
 .caseStudy2{
 background: #FF260090;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 border-radius: 8px;
 grid-area: 1/2/1/2;
+padding-bottom: 10px;
 }
+
 .caseStudy3{
 background: #FF260090;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 border-radius: 8px;  
 grid-area: 2/1/2/2;
+padding-bottom: 10px;
  }
+
 .caseStudy4{
 background: #FF8C0090;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 border-radius: 8px;
 grid-area: 2/2/2/2;
+padding-bottom: 10px;
 }
 
 
