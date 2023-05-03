@@ -23,8 +23,9 @@
 
 
 .gridContainer{
-    height:100vh;
+   
     display:grid;
+    height:100vh;
     padding-left: 3rem;
     padding-right: 3rem;
     gap: 3rem;
@@ -50,7 +51,7 @@
      color: #422828;
      text-align: center;
     text-decoration: none;
-    padding: 16px;
+    padding: 16px 20px;
     font-size: 14px;
      
     }
